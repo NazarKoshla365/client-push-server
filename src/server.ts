@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 admin.initializeApp({
-  credential: admin.credential.cert('etc/secrets/serviceAccountKey.json')
+  credential: admin.credential.cert('./etc/secrets/serviceAccountKey.json')
 })
 
 async function startServer() {
